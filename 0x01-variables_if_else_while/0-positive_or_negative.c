@@ -9,7 +9,7 @@
 * Getting a random number and printing the number
 * and if it is positive, negative, or zero
 * Return: 0
-*     */
+*/
 
 int main(void)
 
