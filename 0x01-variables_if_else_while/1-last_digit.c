@@ -5,13 +5,12 @@
 #include <stdio.h>
 
 /**
-* main - main block
-* Description: Printing statements based on the last digit of the random number.
-* Return: 0
-*/
+ * main - main block
+ * Description: Printing statements based on the last digit of the random number *.
+ * Return: 0
+ */
 
 int main(void)
-
 {
 
 	int n, m;
@@ -29,7 +28,6 @@ int main(void)
 	else
 		printf("Last digit of %i is %i and is less than 6 and not 0\n",  n, m);
 	return (0);
-
 }
 
 
