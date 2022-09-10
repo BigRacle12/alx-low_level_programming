@@ -4,7 +4,7 @@
 
 /**
  * main - main block
- * Description: Printing statements based on the last digit of the random number
+ * Description: Printing statements based on the last digit
  * Return: 0
  */
 
