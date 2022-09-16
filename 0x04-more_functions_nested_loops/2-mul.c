@@ -1,15 +1,19 @@
 #include "main.h"
 
+#include <stdio.h>
+
 /**
-* mul - input
-* Description: multiplies 2 numbers
-* @a: first number
-* @b: second number
-* Return: the answer
-*/
-int mul(int a, int b)
+ * main - check the code.
+ * Return: Always 0.
+ */
+
+int main(void)
 {
-
-	return (a * b);
-
+	char c;
+	
+	c = 'A';
+	printf("%c: %d\n", c, _isupper(c));
+	c = 'a';
+	printf("%c: %d\n", c, _isupper(c));
+	return (0);
 }
