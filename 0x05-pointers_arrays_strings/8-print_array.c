@@ -1,35 +1,45 @@
 #include "main.h"
 
+#include <stdio.h>
+
 /**
- *_strcpy - See description
+ * print_array - print `n` elements of an array of integers
  *
- * @dest: char type string
+ * @a: int type array pointer
  *
- * @src: char type string
+ * @n: int type integer
  *
- * Description: Copy the string pointed to by pointer `src` to
+ * Description: Numbers must be separated by comma and space.
  *
- * the buffer pointed to by `dest`
+ * Numbers should be displayed in the same order they are stored in array.
  *
- * Return: Pointer to `dest`
+ * You can only use _putchar to print.
  */
 
-char *_strcpy(char *dest, char *src)
+void print_array(int *a, int n)
 
 {
 
 	int i;
 
-	for (i = 0; src[i] != '\0'; i++)
+	i = 0;
+
+	for (n--; n >= 0; n--, i++)
 
 	{
 
-		dest[i] = src[i];
+		printf("%d", a[i]);
+
+		if (n > 0)
+
+		{
+
+			printf(", ");
+
+		}
 
 	}
 
-	dest[i] = '\0';
-
-	return (dest);
+	printf("\n");
 
 }
