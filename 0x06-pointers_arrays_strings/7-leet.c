@@ -1,39 +1,27 @@
 #include "main.h"
 
+#include <stdio.h>
+
 /**
- * leet - encode a string into 1337
+ * main - check the code for
  *
- * @s: string
- *
- * Return: encoded string `s`
+ * Return: Always 0.
  */
 
-char *leet(char *s)
-{
-	int i;
+int main(void)
 
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		if (s[i] == 'a' && s[i] == 'A')
-		{
-			s[i] = '4';
-		}
-		if (s[i] == 'e' && s[i] == 'E')
-		{
-			s[i] = '3';
-		}
-		if (s[i] == 'o' && s[i] == 'O')
-		{
-			s[i] = '0';
-		}
-		if (s[i] == 't' && s[i] == 'T')
-		{
-			s[i] = '7';
-		}
-		if (s[i] == 'l' && s[i] == 'L')
-		{
-			s[i] = '1';
-		}
-	}
-	return (s);
+{
+
+	char s[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
+
+	char *p;
+
+	p = leet(s);
+
+	printf("%s", p);
+
+	printf("%s", s);
+
+	return (0);
+
 }
