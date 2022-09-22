@@ -2,10 +2,8 @@
 
 /**
  * cap_string - capitalize all words of a string
- *
- *  str: string
- *
- *  Return: `str`
+ * @str: string
+ * Return: `str`
  */
 
 char *cap_string(char *str)
@@ -23,6 +21,7 @@ char *cap_string(char *str)
 			if (nots[c] == str[i])
 				trigger = 1;
 		}
+
 		if (trigger)
 		{
 			if (str[i] > 96 && str[i] < 123)
